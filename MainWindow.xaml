@@ -7,11 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="displaySaida" HorizontalAlignment="Left" Height="56" Margin="470,303,0,0" TextWrapping="Wrap" Text="LeroLero" VerticalAlignment="Top" Width="138" TextChanged="TextBox_TextChanged" TextAlignment="Center" RenderTransformOrigin="0.129,-0.5"/>
-        <Button x:Name="calcular" Content="Enter" HorizontalAlignment="Left" Height="57" Margin="231,298,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click" RenderTransformOrigin="-0.529,0.537"/>
-        <TextBox x:Name="input2" HorizontalAlignment="Left" Margin="542,55,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="133" Height="56" TextChanged="TextBox_TextChanged_1"/>
-        <TextBox x:Name="input1" HorizontalAlignment="Left" Height="56" Margin="139,55,0,0" TextWrapping="Wrap" Text="0&#xD;&#xA;" VerticalAlignment="Top" Width="135" TextChanged="input1_TextChanged"/>
-        <ListBox HorizontalAlignment="Center" Height="43" Margin="0,62,0,0" VerticalAlignment="Top" Width="168" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <TextBox x:Name="textInput" HorizontalAlignment="Left" Margin="150,50,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="100" Height="50" TextChanged="textInput_TextChanged"/>
+        <Button x:Name="adicionarNum" Content="Adicionar Número" HorizontalAlignment="Left" Margin="300,50,0,0" VerticalAlignment="Top" Height="50" Width="150" Click="adicionarNum_Click"/>
+
+        <TextBox x:Name="showInput" HorizontalAlignment="Right" Margin="0,50,50,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="200" TextChanged="showInput_TextChanged" FontSize="20" RenderTransformOrigin="1,0.5"/>
+
+        <TextBox x:Name="displaySaida" HorizontalAlignment="Left" Margin="300,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="50" TextChanged="displaySaida_TextChanged"/>
+        <Button x:Name="clear" Content="Clear" HorizontalAlignment="Left" Margin="150,335,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="clear_Click"/>
+
+        <Button x:Name="processarSoma" Content="Somar" HorizontalAlignment="Right" Margin="0,300,200,0" VerticalAlignment="Top" Height="50" Width="100" Click="processarSoma_Click"/>
+        <Button x:Name="processarSubtracao" Content="Subtrair" HorizontalAlignment="Right" Margin="0,300,50,0" VerticalAlignment="Top" Height="50" Width="100" Click="processarSubtracao_Click"/>
+        <Button x:Name="processarMultiplicacao" Content="Multiplicar" HorizontalAlignment="Right" Margin="0,370,200,0" VerticalAlignment="Top" Height="50" Width="100" Click="processarMultiplicacao_Click"/>
+        <Button x:Name="processarDivisao" Content="Dividir" HorizontalAlignment="Right" Margin="0,370,50,0" VerticalAlignment="Top" Height="50" Width="100" Click="processarDivisao_Click"/>
 
     </Grid>
 </Window>
